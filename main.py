@@ -1,5 +1,6 @@
 import turtle
 import os
+import winsound
 
 wn_height = 600
 wn_width = 800
