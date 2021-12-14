@@ -138,14 +138,14 @@ def game_run():
         if ball.ycor() > (wn_height/2)-10:
             ball.sety((wn_height/2)-10)
             ball.dy *= -1
-            os.system("aplay bounce.wav&")
+            os.system("aplay bounce.wav -q&")
             #winsound.PlaySound("bounce.wav", winsound.SND_ASYNC)
 
 
         if ball.ycor() < -((wn_height/2)-15):
             ball.sety(-((wn_height/2)-15))
             ball.dy *= -1
-            os.system("aplay bounce.wav&")
+            os.system("aplay bounce.wav -q&")
             #winsound.PlaySound("bounce.wav", winsound.SND_ASYNC)
 
 
@@ -174,9 +174,7 @@ def game_run():
             ball.dx *= -1
             ball.dx+=0.02
             ball.dy+=0.02
-            print("dx: {}".format(ball.dx))
-            print("dy: {}".format(ball.dy))
-            os.system("aplay bounce.wav&")
+            os.system("aplay bounce.wav -q&")
             #winsound.PlaySound("bounce.wav", winsound.SND_ASYNC)
 
 
@@ -186,9 +184,7 @@ def game_run():
             ball.dx *= -1
             ball.dx-=0.02
             ball.dy-=0.02
-            print("dx: {}".format(ball.dx))
-            print("dy: {}".format(ball.dy))
-            os.system("aplay bounce.wav&")
+            os.system("aplay bounce.wav -q&")
             #winsound.PlaySound("bounce.wav", winsound.SND_ASYNC)
 
 
